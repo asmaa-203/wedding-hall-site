@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #0d0a03;
+    background-color: #d89c0f;
     color: white;
     padding: 15px;
     font-size: 22px;
@@ -36,7 +36,7 @@ description p, .contact p {
 
 .contact a {
     font-weight: bold;
-    color: #0c0c0b;
+    color: #debe07;
     font-size: 20px;
     text-decoration: none;
 }
