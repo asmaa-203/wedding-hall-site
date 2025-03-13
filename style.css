@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -9,36 +11,54 @@ header {
     color: white;
     padding: 15px;
     font-size: 22px;
+    text-align: center;
 }
 
-.gallery img {
-    width: 300px;
-    margin: 10px;
+img {
+    max-width: 100%; /* الصورة ستتناسب تلقائيًا مع عرض الشاشة */
+    height: auto;
     border-radius: 10px;
 }
 
-.description {
+.description, .contact {
     margin: 20px;
-    font-size: 18px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0c0c0b;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.hall-details img {
-    width: 400px;
-    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hall-details p {
+description p, .contact p {
+    font-size: 18px; /* تكبير الخط قليلاً */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact a {
+    font-weight: bold;
+    color: #0c0c0b;
     font-size: 20px;
-    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* تحسين التصميم للهواتف */
+@media (max-width: 768px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .gallery img, .hall-details img {
+        width: 90%; /* الصور تكون أكبر ومناسبة للموبايل */
+    }
+    .description, .contact {
+        padding: 15px;
+        font-size: 16px;
+    }
+    .description p, .contact p {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
