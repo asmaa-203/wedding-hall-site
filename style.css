@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #0d0a03;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.description {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0c0c0b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.hall-details img {
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.hall-details p {
+    font-size: 20px;
+    margin-top: 10px;
+}
